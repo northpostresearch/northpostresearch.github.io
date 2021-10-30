@@ -1,0 +1,180 @@
+.bgimage{
+    background-image: url("cityimage.png");
+    height: auto;
+    background-size: cover;
+    background-position: center;
+    max-width: 100%;
+}
+
+.bg{
+    background-color: rgb(11, 15, 66);
+    height: auto;
+    background-size: cover;
+    background-position: center;
+    max-width: 100%;
+    color: white;
+}
+
+.quote {
+    color: white;
+    text-align: center;
+}
+
+.quote1 h2{
+    font-size: 42px;
+    padding-top: 225px;
+    padding-bottom: 275px;
+}
+
+.quote2 h2{
+    font-size: 42px;
+    padding-top: 225px;
+}
+
+.quote2 p{
+    padding-bottom: 250px;
+    padding-right: 175px;
+    padding-left: 175px;
+}
+
+.overweight{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 90px;
+}
+
+.overweight-col{
+    flex-basis: 33%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    text-align: left;
+    padding-left: 50px;
+}
+
+.overweight-col img{
+    width: 100%;
+    border-radius: 10px;
+}
+
+.hovering:hover{
+    opacity: 0.7;
+}
+
+.overweight-col p{
+    padding: 0;
+}
+
+.overweight-col h3{
+    margin-top: 16px;
+    margin-bottom: 15px;
+}
+
+.one{
+    padding-top: 50px;
+}
+
+.sectorweight{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 75px;
+}
+
+.sectorweight-col{
+    flex-basis: 33%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    text-align: left;
+    padding-left: 50px;
+}
+
+.sectorweight-col img{
+    width: 100%;
+    border-radius: 10px;
+}
+
+.sectorweight-col p{
+    padding: 0;
+}
+
+.sectorweight-col h3{
+    margin-top: 16px;
+    margin-bottom: 15px;
+}
+
+.underweight{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 75px;
+}
+
+.underweight-col{
+    flex-basis: 50%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    text-align: left;
+    padding-left: 50px;
+}
+
+.underweight-col img{
+    width: 100%;
+    border-radius: 10px;
+}
+
+.underweight-col p{
+    padding: 0;
+}
+
+.underweight-col h3{
+    margin-top: 16px;
+    margin-bottom: 15px;
+}
+
+.commodities{
+    width: 80%;
+    margin: auto;
+    text-align: left;
+    padding-top: 90px;
+    padding-bottom: 40px;
+}
+
+.commodities-col {
+    flex-basis: 33%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    text-align: left;
+    padding-left: 50px;
+}
+
+.commodities-col h1 {
+    font-size: 50px;
+    font-weight: 700;
+}
+
+.commodities-col h3{
+    margin-top: 16px;
+    margin-bottom: 15px;
+}
+
+.commodities ul{
+    padding-top: 25px;
+    padding-left: 70px;
+    font-size: 20px;
+}
+
+.commodities li{
+    padding-bottom: 10px;
+}
+
+.noinvestments{
+    margin: auto;
+    text-align: center;
+    padding-top: 90px;
+    padding-bottom: 90px;
+}
+
+.noinvestments h1{
+    font-size: 50px;
+}
