@@ -1,6 +1,6 @@
 .bgimage{
     background-image: url("cityimage.png");
-    height: auto;
+    height: 750px;
     background-size: cover;
     background-position: center;
     max-width: 100%;
@@ -28,7 +28,7 @@
 
 .quote2 h2{
     font-size: 42px;
-    padding-top: 225px;
+    padding-top: 275px;
 }
 
 .quote2 p{
