@@ -20,18 +20,37 @@
     text-align: center;
 }
 
-.quote1 h2{
-    font-size: 42px;
-    padding-top: 225px;
-    padding-bottom: 275px;
-}
-
-.quote2 h2{
-    font-size: 42px;
+.quote h2{
+    font-size: 47px;
     padding-top: 275px;
 }
 
-.quote2 p{
+.quote p{
+    font-size: 18px;
+    padding-bottom: 250px;
+    padding-right: 175px;
+    padding-left: 175px;
+}
+
+.quote1 {
+    color: white;
+    text-align: center;
+}
+
+.quote1 h2{
+    font-size: 47px;
+    padding-top: 275px;
+}
+
+.p1 {
+    font-size: 18px;
+    padding-right: 175px;
+    padding-left: 175px;
+}
+
+.p2 {
+    font-size: 12px;
+    opacity: 0.8;
     padding-bottom: 250px;
     padding-right: 175px;
     padding-left: 175px;
