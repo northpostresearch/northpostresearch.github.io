@@ -16,13 +16,16 @@ nav:after{
 
 nav .logo{
     float: left;
-    color: white;
     font-size: 40px;
     font-weight: 600;
     line-height: 70px;
     padding-left: 60px;
     padding-top: 25px;
     padding-bottom: 25px;
+}
+
+nav .logo a{
+    color: white;
 }
 
 nav ul{
@@ -69,9 +72,146 @@ nav ul ul li{
     width: 150px;
     float: none;
     display: list-item;
+    text-align: center;
+    background: #8193ca;
 }
 
 .editing:hover{
     text-decoration: none;
-    color: rgb(194, 194, 194)
+    color: rgb(194, 194, 194);
+}
+
+
+@media (min-width: 768px) and (max-width: 1150px) {
+    nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    nav .logo {
+        text-align: center; 
+        width: 100%; 
+        padding: 0;
+    }
+
+    nav ul {
+        width: 100%; 
+        display: flex;
+        flex-direction: row;
+        justify-content: center; 
+        padding: 0;
+        margin: 0; 
+    }
+
+    nav ul li {
+        position: relative; 
+        margin: 0 10px; 
+    }
+
+    nav ul li a {
+        text-align: center;
+        padding: 10px 15px;
+    }
+
+    nav ul ul {
+        position: absolute;
+        top: 100%; 
+        left: 50%;
+        display: none;
+        background: rgb(11, 15, 66); 
+    }
+
+    nav ul li:hover > ul {
+        display: block; 
+    }
+}
+
+
+@media (max-width: 768px) {
+  
+    nav {
+        display: flex;
+        flex-direction: column; 
+        align-items: center;
+    }
+
+   
+    nav .logo {
+        text-align: center; 
+        width: 100%; 
+        padding: 0;
+    }
+
+  
+    nav ul {
+        display: flex; 
+        flex-direction: column; 
+        align-items: center; 
+        width: 100%; 
+        padding: 0; 
+        margin: 0; 
+    }
+
+
+    nav ul li {
+        width: 100%;
+        text-align: center; 
+        margin: 8px 0; 
+    }
+
+    nav ul li a {
+        display: block; 
+        padding: 12px;
+        font-size: 20px;
+        color: white;
+        text-decoration: none;
+    }
+
+   
+    nav ul ul {
+        position: static; 
+        display: none;
+        flex-direction: column; 
+        align-items: center; 
+        width: 100%; 
+        background: #8193ca;
+    }
+
+    nav ul ul li {
+        width: 100%; 
+        text-align: center; 
+        margin: 5px 0; 
+    }
+
+    nav ul ul li a {
+        display: block; 
+        padding: 12px; 
+        font-size: 18px; 
+        color: white; 
+        text-decoration: none; 
+    }
+
+    
+    nav ul li:hover > ul {
+        display: flex; 
+    }
+}
+
+
+@media (max-width: 480px) {
+    nav .logo {
+        font-size: inherit; 
+        margin-bottom: inherit; 
+    }
+
+    nav ul li a {
+        font-size: inherit;
+        padding: inherit; 
+    }
+
+    nav ul ul li {
+        padding: 0;
+    }
 }

@@ -1,5 +1,20 @@
+html, body{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.bodywrap{
+    flex: 1; /* Takes up all available space */
+    display: flex;
+    flex-direction: column;
+}
+
 .bgimage{
     background-image: url("cityimage.png");
+    display: flex;
+    justify-content: center;
+    align-items: center;
     height: 750px;
     background-size: cover;
     background-position: center;
@@ -20,40 +35,12 @@
     text-align: center;
 }
 
-.quote h2{
+.quote h2 {
     font-size: 47px;
-    padding-top: 275px;
-}
-
-.quote p{
-    font-size: 18px;
-    padding-bottom: 250px;
-    padding-right: 175px;
-    padding-left: 175px;
-}
-
-.quote1 {
-    color: white;
-    text-align: center;
-}
-
-.quote1 h2{
-    font-size: 47px;
-    padding-top: 275px;
 }
 
 .p1 {
     font-size: 18px;
-    padding-right: 175px;
-    padding-left: 175px;
-}
-
-.p2 {
-    font-size: 12px;
-    opacity: 0.8;
-    padding-bottom: 250px;
-    padding-right: 175px;
-    padding-left: 175px;
 }
 
 .overweight{
@@ -67,7 +54,7 @@
     flex-basis: 33%;
     border-radius: 10px;
     margin-bottom: 5%;
-    text-align: left;
+    text-align: center;
     padding-left: 50px;
 }
 
@@ -76,8 +63,9 @@
     border-radius: 10px;
 }
 
-.hovering:hover{
+.hovering a:hover{
     opacity: 0.7;
+    text-decoration: none;
 }
 
 .overweight-col p{
@@ -87,6 +75,7 @@
 .overweight-col h3{
     margin-top: 16px;
     margin-bottom: 15px;
+    color:  #4d4d4d;
 }
 
 .one{
@@ -97,14 +86,15 @@
     width: 80%;
     margin: auto;
     text-align: center;
-    padding-top: 75px;
+    padding-top: 90px;
+    padding-bottom: 15px;
 }
 
 .sectorweight-col{
     flex-basis: 33%;
     border-radius: 10px;
     margin-bottom: 5%;
-    text-align: left;
+    text-align: center;
     padding-left: 50px;
 }
 
@@ -120,80 +110,100 @@
 .sectorweight-col h3{
     margin-top: 16px;
     margin-bottom: 15px;
+    color:  #4d4d4d;
 }
 
-.underweight{
-    width: 80%;
-    margin: auto;
-    text-align: center;
-    padding-top: 75px;
-}
-
-.underweight-col{
-    flex-basis: 50%;
-    border-radius: 10px;
-    margin-bottom: 5%;
-    text-align: left;
-    padding-left: 50px;
-}
-
-.underweight-col img{
+.investment{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
     width: 100%;
-    border-radius: 10px;
+    height: 100%;
 }
 
-.underweight-col p{
-    padding: 0;
-}
-
-.underweight-col h3{
-    margin-top: 16px;
-    margin-bottom: 15px;
-}
-
-.commodities{
+.investment section{
     width: 80%;
-    margin: auto;
-    text-align: left;
-    padding-top: 90px;
-    padding-bottom: 40px;
 }
 
-.commodities-col {
-    flex-basis: 33%;
-    border-radius: 10px;
-    margin-bottom: 5%;
+.stats {
+    flex-basis: 33.33%;
     text-align: left;
     padding-left: 50px;
 }
 
-.commodities-col h1 {
+.stats h1 {
     font-size: 50px;
     font-weight: 700;
 }
 
-.commodities-col h3{
+.stats h3{
     margin-top: 16px;
     margin-bottom: 15px;
 }
 
-.commodities ul{
-    padding-top: 25px;
-    padding-left: 70px;
-    font-size: 20px;
-}
-
-.commodities li{
-    padding-bottom: 10px;
-}
-
 .noinvestments{
-    margin: auto;
-    text-align: center;
-    padding-top: 90px;
-    padding-bottom: 90px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    width: 100%;
+    height: 100%;
 }
 
 .noinvestments h1{
-    font-size: 50px;
+    font-size: 40px;
+}
+
+@media (max-width: 900px) {
+    .row.one,
+    .row.two,
+    .row.three {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .overweight-col,
+    .sectorweight-col,
+    .underweight-col {
+        width: 100%;
+        padding-left: 0;
+        margin-bottom: 20px;
+    }
+
+    .overweight-col img,
+    .sectorweight-col img,
+    .underweight-col img {
+        max-width: 300px;
+        height: auto;
+        border-radius: 10px;
+    }
+}
+
+@media (max-width: 900px) {
+    .stats {
+        width: 100%;
+        text-align: center;
+        padding: 0px;
+    }
+
+    .investment h1, p {
+        width: 100%;
+        text-align: center;
+    }
+
+    .two {
+        padding-top: 0px;
+    }
+}
+
+@media (max-width: 768px) {
+    .investment {
+        padding-top: 75px;
+    }
+
+    .statspecial {
+        padding-bottom: 75px;
+    }
 }
