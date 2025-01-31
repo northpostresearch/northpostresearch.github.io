@@ -149,7 +149,6 @@ html, body{
     align-items: center; 
     width: 100%;
     height: 100%;
-    text-align: center;
 }
 
 .noinvestments h1{
@@ -205,6 +204,18 @@ html, body{
     }
 
     .statspecial {
+        padding-bottom: 75px;
+    }
+}
+
+@media (max-width: 768px) {
+    .noinvestments {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        text-align: center;
+        padding-top: 75px;
         padding-bottom: 75px;
     }
 }
