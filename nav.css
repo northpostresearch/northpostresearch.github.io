@@ -54,14 +54,13 @@ nav ul li a{
 
 nav ul ul{
     position: absolute;  
-    top: 110px;
     opacity: 0;
     visibility: hidden;
     transition: top 0.2s;
 }
 
 nav ul li:hover > ul{
-    top: 90px;
+    top: 92%;
     opacity: 1;
     visibility: visible;
 }
@@ -74,6 +73,10 @@ nav ul ul li{
     display: list-item;
     text-align: center;
     background: #8193ca;
+}
+
+nav ul ul li a {
+    line-height: 50px; /* Adjust line height if necessary to reduce height further */
 }
 
 .editing:hover{
