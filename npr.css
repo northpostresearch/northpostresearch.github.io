@@ -126,10 +126,13 @@ html, body{
     width: 80%;
 }
 
+.id {
+    text-align: center;
+}
+
 .stats {
     flex-basis: 33.33%;
-    text-align: left;
-    padding-left: 50px;
+    text-align: center;
 }
 
 .stats h1 {
@@ -217,5 +220,9 @@ html, body{
         text-align: center;
         padding-top: 75px;
         padding-bottom: 75px;
+    }
+
+    .quote h2{
+        font-size: 40px;
     }
 }

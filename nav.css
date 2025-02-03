@@ -65,6 +65,10 @@ nav ul li:hover > ul{
     visibility: visible;
 }
 
+nav ul li:hover > ul.shifting-o {
+    transform: translateX(-10%);
+}
+
 nav ul ul li{
     position: relative;
     margin: 0px;
@@ -119,15 +123,25 @@ nav ul ul li a {
     }
 
     nav ul ul {
-        position: absolute;
-        top: 100%; 
+        position: absolute; 
         left: 50%;
+        top: 200%;
+        transform: translateX(-50%);
         display: none;
         background: rgb(11, 15, 66); 
     }
 
     nav ul li:hover > ul {
         display: block; 
+    }
+
+    nav ul li:hover > ul.shifting-o {
+        transform: translateX(-60%);
+        top: 100%;
+    }
+
+    nav ul li:hover > ul.shifting-sw {
+        top: 100%;
     }
 }
 
@@ -200,6 +214,10 @@ nav ul ul li a {
     nav ul li:hover > ul {
         display: flex; 
     }
+
+    nav ul li:hover > ul.shifting-o {
+        transform: translateX(0%);
+    }
 }
 
 
@@ -211,7 +229,6 @@ nav ul ul li a {
 
     nav ul li a {
         font-size: inherit;
-        padding: inherit; 
     }
 
     nav ul ul li {
